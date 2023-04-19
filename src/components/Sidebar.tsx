@@ -45,8 +45,6 @@ export function Sidebar() {
         <SavedPlaylistItem title="Discover Weekly" />
         <SavedPlaylistItem title="Release Radar" />
         <SavedPlaylistItem title="Daily Mix 4" />
-        <SavedPlaylistItem title="Yesterday Hits" />
-        <SavedPlaylistItem title="Nine Music" />
       </nav>
     </aside>
   )
