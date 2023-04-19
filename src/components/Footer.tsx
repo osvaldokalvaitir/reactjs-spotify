@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <footer className="bg-zinc-800 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <Image src="/album.jpg" width={56} height={56} alt="Capa do álbum Ghost Stories da banda Coldplay" />
+        <Image src="/album-ghost-stories.jpg" width={56} height={56} alt="Capa do álbum Ghost Stories da banda Coldplay" />
         <div className="flex flex-col">
           <strong className="font-normal">Ghost Stories</strong>
           <span className="text-xs text-zinc-400">Coldplay</span>
