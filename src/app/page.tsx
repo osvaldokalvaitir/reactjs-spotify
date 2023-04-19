@@ -1,11 +1,11 @@
 import { Footer } from '@/components/Footer'
+import { PlaylistItem } from '@/components/PlaylistItem'
+import { RecentPlaylistItem } from '@/components/RecentPlaylistItem'
 import { Sidebar } from '@/components/Sidebar'
 import {
   ChevronLeft,
   ChevronRight,
-  Play,
 } from 'lucide-react'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -26,99 +26,22 @@ export default function Home() {
           <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors">
-              <Image src="/album.jpg" width={104} height={104} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong>Ghost Stories</strong>
-
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play />
-              </button>
-            </a>
+          <RecentPlaylistItem title="Ghost Stories" cover_source="/album-ghost-stories.jpg" />
+          <RecentPlaylistItem title="Everyday Life" cover_source="/album-everyday-life.jpg" />
+          <RecentPlaylistItem title="Kaleidoscope" cover_source="/album-kaleidoscope.jpg" />
+          <RecentPlaylistItem title="Music Of The Spheres" cover_source="/album-music-of-the-spheres.jpg" />
+          <RecentPlaylistItem title="Parachutes" cover_source="/album-parachutes.jpg" />
+          <RecentPlaylistItem title="A Head Full Of Dreams" cover_source="/album-a-head-full-of-dreams.jpg" />
           </div>
 
           <h2 className="font-semibold text-2xl mt-10">Made for Osvaldo Kalvaitir Filho</h2>
 
           <div className="grid grid-cols-8 gap-4 mt-4">
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
-            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-              <Image src="/album.jpg" className="w-full" width={120} height={120} alt="Capa do álbum Ghost Stories da banda Coldplay" />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-500">Wallows, COIN, girl in red and more</span>
-            </a>
+            <PlaylistItem title="A Head Full Of Dreams" description="Wallows, COIN, girl in red and more" cover_source="/album-a-head-full-of-dreams.jpg" />
+            <PlaylistItem title="Parachutes" description="Wallows, COIN, girl in red and more" cover_source="/album-parachutes.jpg" />
+            <PlaylistItem title="Music Of The Spheres" description="Wallows, COIN, girl in red and more" cover_source="/album-music-of-the-spheres.jpg" />
+            <PlaylistItem title="Kaleidoscope" description="Wallows, COIN, girl in red and more" cover_source="/album-kaleidoscope.jpg" />
+            <PlaylistItem title="Everyday Life" description="Wallows, COIN, girl in red and more" cover_source="/album-everyday-life.jpg" />
           </div>
         </main>
       </div>

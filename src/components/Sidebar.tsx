@@ -3,6 +3,7 @@ import {
   Library,
   Search,
 } from 'lucide-react'
+import { SavedPlaylistItem } from './SavedPlaylistItem'
 
 export function Sidebar() {
   return (
@@ -29,17 +30,23 @@ export function Sidebar() {
       </nav>
 
       <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Hot Hits Brasil</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Daily Mix 1</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Pop Up</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Top Brasil</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Viral Hits</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Daily Mix 2</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Heavy Ballads</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Today's Top Hits</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Metal Essentials</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">On Repeat</a>
-        <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Daily Mix 3</a>
+        <SavedPlaylistItem title="Hot Hits Brasil" />
+        <SavedPlaylistItem title="Daily Mix 1" />
+        <SavedPlaylistItem title="Pop Up" />
+        <SavedPlaylistItem title="Top Brasil" />
+        <SavedPlaylistItem title="Viral Hits" />
+        <SavedPlaylistItem title="Daily Mix 2" />
+        <SavedPlaylistItem title="Heavy Ballads" />
+        <SavedPlaylistItem title="Today's Top Hits" />
+        <SavedPlaylistItem title="Metal Essentials" />
+        <SavedPlaylistItem title="On Repeat" />
+        <SavedPlaylistItem title="Daily Mix 3" />
+        <SavedPlaylistItem title="Viral Hits" />
+        <SavedPlaylistItem title="Discover Weekly" />
+        <SavedPlaylistItem title="Release Radar" />
+        <SavedPlaylistItem title="Daily Mix 4" />
+        <SavedPlaylistItem title="Yesterday Hits" />
+        <SavedPlaylistItem title="Nine Music" />
       </nav>
     </aside>
   )
